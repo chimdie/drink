@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+header{
+  background-color: #333;
+  color: #ffffff;
+  padding: .45rem;
+  /* position: fixed; */   /*add this using js oncce its scrolled up*/
+  width: 100%;
+  opacity: 0.6;
+}
+h5{
+  padding: .25rem;
+  margin: 1rem 0 .30rem;  
+}
+nav{
+  text-align: right;
+}
+nav > ul{
+  margin-top: -2rem;
+}
+nav > ul > li > a{
+  margin-bottom: .25rem;  
+  border-radius: .75rem;
+  background-color: #333;
+}
+nav > ul > li {
+  display: inline-flex;
+  position: relative;
+  padding: .25rem;
+}
+
+h5, h1, h3{
+    font-family: 'Playfair Display', serif;
+}
+p, a{
+    font-family: 'Source Sans Pro', sans serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    background-color: goldenrod;
+    text-decoration: none;
+    color: whitesmoke;
+    background-origin: .25rem;
+    border-radius: .75rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+}
+a:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.hero{
+    background: url(images/bridge.jpg)center;
+    background-size: cover;
+    padding: 12rem 2rem; 
+    color: whitesmoke;
+    
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+}
+.hero{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+.hero > article > p {
+    font-size: 1rem;
+    font-weight: .75rem;
+}
+.hero > article > a{
+    padding: 1rem;
+    margin-top: .75rem;
+    /* margin-left: 15rem; */
+    font-size: 2rem;
+}
+
+.breweries{
+    padding: 2rem;
+}
+.breweries > ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+}
+.breweries > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+}
+  
+.breweries > ul > li > figure {
+  max-height: 60vh; 
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+  
+.breweries > ul > li > figure > img {
+  width: 100%;
+}
+  
+.breweries > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption > h3 {
+  color: goldenrod;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.breweries > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+  
+.breweries > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
